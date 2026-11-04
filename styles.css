@@ -105,5 +105,22 @@ h1 span, .section-heading h2 span { color: #84917e; }
   .for-card { min-height: 175px; padding: 17px 15px; }
   .for-number { margin-bottom: 24px; }
   .for-card h3 { font-size: 14px; }
-  .for-card p { font-size: 11px; }
+  .for-card p { font-size: 12px; }
+}
+
+
+/* Photography and a single, consistent outline icon style. */
+.for-card { min-height: 0; padding: 0 0 20px; overflow: hidden; background: #fffefa; }
+.for-photo { display: block; width: 100%; height: clamp(120px, 15vw, 178px); object-fit: cover; }
+.for-number { margin: 17px 20px 23px; }
+.for-card h3, .for-card p { margin-left: 20px; margin-right: 20px; }
+.for-card h3 { margin-bottom: 8px; }
+.ui-icon { width: 18px; height: 18px; flex: 0 0 auto; display: block; }
+.step-glyph { position: absolute; top: 12px; left: 12px; width: 26px; height: 26px; color: var(--deep-green); }
+.ready-check .ui-icon { width: 15px; height: 15px; }
+@media (max-width: 760px) {
+  .for-card { padding-bottom: 17px; }
+  .for-photo { height: clamp(108px, 34vw, 150px); }
+  .for-number { margin: 14px 15px 18px; }
+  .for-card h3, .for-card p { margin-left: 15px; margin-right: 15px; }
 }
