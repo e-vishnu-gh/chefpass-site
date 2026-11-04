@@ -87,3 +87,23 @@ h1 span, .section-heading h2 span { color: #84917e; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
+
+
+.for { padding-top: 76px; padding-bottom: 88px; border-top: 1px solid var(--line); }
+.for .section-heading { align-items: end; }
+.for-intro { max-width: 330px; margin: 0 0 5px; color: #697068; font-size: 13px; line-height: 1.7; }
+.for-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.for-card { min-height: 198px; padding: 21px 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.for-number { display: inline-block; margin-bottom: 36px; color: #8b9288; font-size: 10px; }
+.for-card h3 { margin: 0 0 9px; font: 700 16px Manrope, sans-serif; letter-spacing: -.5px; }
+.for-card p { max-width: 235px; margin: 0; color: #697068; font-size: 12px; line-height: 1.65; }
+@media (max-width: 760px) {
+  .for { padding-top: 62px; padding-bottom: 70px; }
+  .for .section-heading { margin-bottom: 25px; }
+  .for-intro { margin-top: 15px; }
+  .for-grid { grid-template-columns: repeat(2, 1fr); }
+  .for-card { min-height: 175px; padding: 17px 15px; }
+  .for-number { margin-bottom: 24px; }
+  .for-card h3 { font-size: 14px; }
+  .for-card p { font-size: 11px; }
+}
