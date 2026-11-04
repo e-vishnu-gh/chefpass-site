@@ -124,3 +124,6 @@ h1 span, .section-heading h2 span { color: #84917e; }
   .for-number { margin: 14px 15px 18px; }
   .for-card h3, .for-card p { margin-left: 15px; margin-right: 15px; }
 }
+
+.meal-art { background: #e7e1d7; }
+.meal-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
